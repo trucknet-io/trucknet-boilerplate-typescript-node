@@ -13,6 +13,8 @@
     "commit": "git-cz",
     "precommit": "lint-staged && npm run lint:tslint",
     "test": "jest --detectOpenHandles --coverage && jest-coverage-badges",
+    "test:unit": "jest --detectOpenHandles --testPathPattern \"src/.+spec.ts$\"",
+    "test:e2e": "jest --detectOpenHandles --testPathPattern \"__tests__/.+.ts\"",
     "clean": "rimraf {src,test}/*.js*"
   },
   "repository": {
