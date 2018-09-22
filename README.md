@@ -1,5 +1,11 @@
 # Trucknet Boilerplate for nodejs project on Typescript
 
+> A sample node project on typescript with tslint (and trucknet tslint config), prettier, lint-staged, commitizen, jest, ts-jest, jest-coverage-badges preinstalled and preconfigured.
+
+![Coverage badge][coverage-badge]
+
+[coverage-badge]: ./coverage/badge-functions.svg
+
 ## Getting started
 
 1. `git clone` this repository

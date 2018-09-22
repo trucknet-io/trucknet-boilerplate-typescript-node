@@ -12,7 +12,7 @@
     "start": "node src/main",
     "commit": "git-cz",
     "precommit": "lint-staged && npm run lint:tslint",
-    "test": "jest --detectOpenHandles",
+    "test": "jest --detectOpenHandles --coverage && jest-coverage-badges",
     "clean": "rimraf {src,test}/*.js*"
   },
   "repository": {
@@ -36,6 +36,7 @@
     "commitizen": "^2.10.1",
     "cz-emoji": "^1.1.2",
     "jest": "^23.6.0",
+    "jest-coverage-badges": "^1.0.0",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "rimraf": "^2.6.2",
