@@ -38,18 +38,18 @@
   "homepage": "https://github.com/trucknet-io/trucknet-boilerplate-typescript-node#readme",
   "devDependencies": {
     "@types/jest": "^23.3.2",
-    "@types/node": "^10.10.1",
-    "commitizen": "^2.10.1",
+    "@types/node": "^8.10.0",
+    "commitizen": "^3.0.1",
     "cz-emoji": "^1.1.2",
     "jest": "^23.6.0",
     "jest-coverage-badges": "^1.0.0",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "rimraf": "^2.6.2",
-    "ts-jest": "^23.10.1",
+    "ts-jest": "^23.10.3",
     "tslint": "^5.11.0",
-    "tslint-config-trucknet-io": "^1.0.0",
-    "typescript": "^3.0.3"
+    "tslint-config-trucknet-io": "^1.0.1",
+    "typescript": "^3.1.1"
   },
   "_moduleAliases": {
     "@src": "src"
