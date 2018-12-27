@@ -1,6 +1,6 @@
 {
   "name": "trucknet-boilerplate-typescript-node",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Boilerplate for node project on typescript",
   "main": "index.js",
   "engines": {
@@ -22,7 +22,7 @@
     "test:unit": "jest --detectOpenHandles --testPathPattern \"src/.+spec.tsx?$\"",
     "test:e2e": "jest --detectOpenHandles --testPathPattern \"__tests__/.+.tsx?\"",
     "test:ci": "jest --detectOpenHandles --coverage",
-    "clean": "rimraf {src,test}/*.js*",
+    "clean": "rimraf {src,__tests__}/**/*.js*",
     "release": "./extra/deployment/release.sh"
   },
   "repository": {
