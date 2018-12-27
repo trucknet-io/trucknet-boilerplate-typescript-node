@@ -22,7 +22,7 @@
     "test:unit": "jest --detectOpenHandles --testPathPattern \"src/.+spec.tsx?$\"",
     "test:e2e": "jest --detectOpenHandles --testPathPattern \"__tests__/.+.tsx?\"",
     "test:ci": "jest --detectOpenHandles --coverage",
-    "clean": "rimraf {src,test}/*.js*",
+    "clean": "rimraf {src,__tests__}/**/*.js*",
     "release": "./extra/deployment/release.sh"
   },
   "repository": {
