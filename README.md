@@ -8,7 +8,8 @@
 2. `rm -rf .git`
 3. `git init`
 4. `git remote add origin`
-5. Edit package.json to change name, description and git repository
+5. `git flow init`
+6. Edit package.json to change name, description and git repository
 
 ## Start
 
@@ -20,3 +21,7 @@
 
 Unit tests should be near the file with `.spec.ts` extention.
 Integration tests should be in **tests**
+
+## Release
+
+`npm test patch/minor/major` will start a release/ branch (using git flow), edit package.json (and lock) to update the version, commit, finish the release and push including all branches and tags
