@@ -16,6 +16,7 @@
     "lint:tslint": "tslint -c tslint.json -p tsconfig.json --fix",
     "lint:prettier": "prettier --write \"{src,test}/**/*.ts*\"",
     "start": "node src/main",
+    "start:dev": "concurrently --kill-others \"tsc -w\" \"set DEBUG=* && nodemon src/main.js\"",
     "commit": "commit-prompt --no-verify",
     "precommit": "lint-staged && npm run lint",
     "test": "jest --detectOpenHandles",
@@ -42,7 +43,9 @@
   "homepage": "https://github.com/trucknet-io/trucknet-boilerplate-typescript-node#readme",
   "devDependencies": {
     "@types/jest": "^23.3.13",
+    "concurrently": "^4.1.0",
     "jest": "^23.6.0",
+    "nodemon": "^1.18.10",
     "prettier-config-trucknet-io": "^2.0.1",
     "rimraf": "^2.6.3",
     "trucknet-commit": "^1.4.3",
