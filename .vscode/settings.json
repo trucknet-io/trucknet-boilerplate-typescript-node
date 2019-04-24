@@ -1,8 +1,14 @@
 {
   "files.exclude": {
-    "{src,__tests__}/**/*.js": true,
-    "{src,__tests__}/**/*.js.map": true
+    "**/*.js": { "when": "$(basename).ts" },
+    "**/*.js.map": true
   },
-  "tslint.autoFixOnSave": true,
-  "editor.formatOnSave": true
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "editor.formatOnSave": true,
+  "debug.node.autoAttach": "on",
+  "jest.debugCodeLens.showWhenTestStateIn": ["fail", "unknown", "pass", "skip"],
+  "jest.pathToJest": "npx jest --coverage",
+  "jest.showCoverageOnLoad": true
 }

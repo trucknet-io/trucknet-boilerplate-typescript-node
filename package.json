@@ -5,7 +5,7 @@
   "main": "index.js",
   "engines": {
     "node": "~10.14.0",
-    "npm": "~6.4.0"
+    "npm": "~6.9.0"
   },
   "scripts": {
     "build": "tsc",
@@ -16,7 +16,7 @@
     "lint:tslint": "tslint -c tslint.json -p tsconfig.json --fix",
     "lint:prettier": "prettier --write \"{src,test}/**/*.ts*\"",
     "start": "node src/main",
-    "start:dev": "concurrently --kill-others \"tsc -w\" \"set DEBUG=* && nodemon src/main.js\"",
+    "start:dev": "concurrently --kill-others \"tsc -w\" \"set DEBUG=* && nodemon --inspect src/main.js\"",
     "commit": "commit-prompt --no-verify",
     "precommit": "lint-staged && npm run lint",
     "test": "jest --detectOpenHandles",
